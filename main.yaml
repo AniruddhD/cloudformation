@@ -90,6 +90,10 @@ Resources:
       InstanceType: t2.micro
       ImageId: ami-0ad21ae1d0696ad58  # Example AMI ID, replace with your region's AMI ID
       KeyName: cloudwatch  # Replace with your Key Pair name
+      InstanceCount:
+        Description: Number of EC2 instances to create
+        Type: Number
+        Default: 3
       NetworkInterfaces:
         - AssociatePublicIpAddress: true
           SubnetId: !Ref MySubnet
